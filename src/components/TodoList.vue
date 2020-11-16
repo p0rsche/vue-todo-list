@@ -1,15 +1,9 @@
-<template>
-  <v-card class="mx-auto" max-width="500">
-    <v-progress-circular
-      v-if="isLoading"
-      :size="50"
-      :width="7"
-      color="green"
-      indeterminate
-    ></v-progress-circular>
-    <v-list v-else>
-      <v-list-item>
-        <v-text-field
+<template lang="pug">
+  v-card(class="mx-auto" max-width="500")
+    v-progress-circular(v-if="isLoading" :size="50" :width="7" color="green" indeterminate)
+    v-list(v-else)
+      v-list-item
+        v-text-field(
           type="text"
           label="Add new todo"
           clear-icon="mdi-close-circle"
@@ -19,11 +13,8 @@
           @click:append-outer="saveTodo"
           @keyup.enter="saveTodo"
           clearable
-        ></v-text-field>
-      </v-list-item>
-      <TodoItem v-for="(todo, i) in todos" :key="i" :item="todo" />
-    </v-list>
-  </v-card>
+          )
+      TodoItem(v-for="(todo, i) in todos" :key="i" :item="todo")
 </template>
 
 <script lang="ts">
@@ -61,14 +52,6 @@ export default class App extends Vue {
   }
 }
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

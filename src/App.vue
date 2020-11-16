@@ -1,9 +1,7 @@
-<template>
-  <v-app>
-    <v-main>
-      <TodoList/>
-    </v-main>
-  </v-app>
+<template lang="pug">
+  v-app
+    v-main
+      TodoList
 </template>
 
 <script lang="ts">
@@ -22,3 +20,13 @@ export default Vue.extend({
   },
 });
 </script>
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
