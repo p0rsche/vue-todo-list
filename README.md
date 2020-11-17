@@ -1,9 +1,15 @@
 # todo-app
-    - Vue.js
-    - Vuex
-    - Vuetify
-    - Typescript
-    - Pug templates
+
+This is sample Todo project.
+Technologies used:
+
+- Vue.js
+- Vuex
+- Vuetify
+- Typescript
+- Pug templates
+
+Deployed app: https://vue-vuex-ts-todo-app.netlify.app/
 
 ## Project setup
 ```
