@@ -9,8 +9,6 @@ Technologies used:
 - Typescript
 - Pug templates
 
-Deployed app: https://vue-vuex-ts-todo-app.netlify.app/
-
 ## Project setup
 ```
 npm install
